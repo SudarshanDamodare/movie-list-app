@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import MovieList from "./components/MovieList";
+
 function App() {
   return (
-    <div className="App">
-      Hello World
+    <div className="root">
+      <Header />
+      <MovieList />
     </div>
   );
 }

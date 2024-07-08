@@ -1,0 +1,1 @@
+export const getGenre = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
