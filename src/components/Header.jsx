@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { getGenre } from '../apis';
 import { axiosConfig } from '../axiosConfig';
 
-const Header = ({ onGenreChange = () => {} }) => {
+const Header = ({ currentGenre, onGenreChange = () => {} }) => {
   const [genres, setGenres] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,7 @@ const Header = ({ onGenreChange = () => {} }) => {
       <div className='genre-list'>
         {genres.map((genre, index) => (
           <div
-            className='genre'
+            className={`genre ${currentGenre===genre.name ? 'active' : ''}`}
             key={`${genre.name}-${index}`}
             onClick={e => onGenreChange(e, genre)}
           >{genre.name}</div>

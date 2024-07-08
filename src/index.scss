@@ -49,6 +49,12 @@ code {
       color: #FFF;
       font-weight: 600;
       white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #e3dfdf;
+      color: #121212;
     }
   }
 }
