@@ -1,2 +1,2 @@
 # movie-list-app
-Movie list react application
+Movieflex keep watching interesting content for free! 
