@@ -1,1 +1,2 @@
 export const getGenre = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
+export const getMovies = 'https://api.themoviedb.org/3/discover/movie?api_key=8c12ee6e87a8baf4e6bff71b74532660&sort_by=popularity.desc&primary_release_year={year}&page=1&vote_count.gte=100';

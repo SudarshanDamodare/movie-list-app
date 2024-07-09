@@ -23,7 +23,7 @@ const Header = ({ currentGenre, onGenreChange = () => {} }) => {
       <div className='genre-list'>
         {genres.map((genre, index) => (
           <div
-            className={`genre ${currentGenre===genre.name ? 'active' : ''}`}
+            className={`genre ${currentGenre===genre.id ? 'active' : ''}`}
             key={`${genre.name}-${index}`}
             onClick={e => onGenreChange(e, genre)}
           >{genre.name}</div>
