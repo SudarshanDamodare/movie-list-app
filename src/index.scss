@@ -28,6 +28,10 @@ code {
 
 .header {
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 2;
   .heading {
     color: #db2d3d;
     font-weight: 900;

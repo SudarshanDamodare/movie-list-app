@@ -1,5 +1,7 @@
-import React from 'react'
-import MovieCard from './MovieCard'
+import React from 'react';
+import MovieCard from './MovieCard';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import Loader from './Loader';
 
 const MovieList = ({ movies }) => {
   return (
@@ -16,6 +18,6 @@ const MovieList = ({ movies }) => {
       ))}
     </div>
   );
-}
+};
 
-export default MovieList
+export default MovieList;
